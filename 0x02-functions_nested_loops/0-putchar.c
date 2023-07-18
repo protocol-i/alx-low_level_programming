@@ -1,9 +1,11 @@
-#include <stdio.h>
+#include <main>
 /**
  * Main Entry
  * Return 0 - always
  */
-int main(void){
+
+int main(void)
+{
 _putchar('_');
 _putchar('P');
 _putchar('u');
