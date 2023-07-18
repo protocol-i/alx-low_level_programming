@@ -1,7 +1,8 @@
 #include <main>
 /**
- * Main Entry
- * Return 0 - always
+ * main - print _putchar
+ * Is written by zak
+ * Return: 0
  */
 
 int main(void)
