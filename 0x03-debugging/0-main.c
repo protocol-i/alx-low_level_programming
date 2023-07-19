@@ -8,5 +8,5 @@ int main(void)
 	int r;
 	r = 0;
 	positive_or_negative(r);
-	return (0);
+return (0);
 }
