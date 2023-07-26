@@ -5,9 +5,9 @@
  * @dest : first input value
  * @src : second input value
  * @n : byte input value
- * Return : dest
+ * Return: dest.
 */
-char*_strncat(char*dest, char*src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int m;
 	int j;
