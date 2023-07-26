@@ -4,13 +4,13 @@
  * @n : integer parameters
  * Return: 0
 */
-void rev_string(char*n)
+void rev_string(char *n)
 {
 	int m = 0;
 	int j = 0;
 	char t;
 
-	while(*(n + m) !=  '\0')
+	while (*(n + m) !=  '\0')
 	{
 		m++;
 	}
@@ -23,20 +23,20 @@ void rev_string(char*n)
 	}
 }
 /**
- * infinite_add - add 2 numbers together
+ * infinite_add - adds two numbers together
  * @n1: text representation of 1st number to add
  * @n2: text representation of 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointer to calling function
- */
+ * Return: pointer to call function1
+*/
 
-char*infinte_add(char*n1, char*n2, char*r, int size_r)
+char *infinte_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, m = 0, numbers = 0;
-	int val1 = 0, val2 = 0, temp_t =0;
+	int val1 = 0, val2 = 0, temp_t = 0;
 
-	while(*(n1 + m) != '\0')
+	while (*(n1 + m) != '\0')
 		m++;
 	m--;
 	j--;
@@ -53,7 +53,7 @@ char*infinte_add(char*n1, char*n2, char*r, int size_r)
 		else
 			val2 = *(n2 + j) - '0';
 		tempt_t = val1 + val2 + overflow;
-		if(temp_t >= 10)
+		if (temp_t >= 10)
 			overflow = 1;
 		else
 			overflow = 0;
@@ -71,4 +71,3 @@ char*infinte_add(char*n1, char*n2, char*r, int size_r)
 	rev_string(r);
 	return (r);
 }
-

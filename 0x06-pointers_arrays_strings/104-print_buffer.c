@@ -6,10 +6,10 @@
  * @size: size
  * Return : void
 */
-void print_buffer(char*b, int size)
+void print_buffer(char *b, int size)
 {
-	int o,j,i;
-	
+	int o, j, i;
+
 	o = 0;
 
 	if (size <= 0)
@@ -19,22 +19,22 @@ void print_buffer(char*b, int size)
 	}
 	while (o < size)
 	{
-		j = size - o < 10 ; size -0 ; 10;
+		j = size - o < 10 ? size - 0 : 10;
 		printf("%08x: ", o)
 		{
-			if (m <j)
+			if (m < j)
 				printf("%02x", *(b + 0 + i));
 			else
-				print(" ");
+				printf(" ");
 		if (m % 2)
 		{
 			printf(" ");
 		}
 
 		}
-		for (m = 0; , < j; m++)
+		for (m = 0; m < j; m++)
 		{
-			int c = *(b + + m);
+			int c = *(b + o + m);
 
 			if (c < 32 || c > 132)
 			{
