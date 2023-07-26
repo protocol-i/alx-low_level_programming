@@ -3,9 +3,9 @@
 /**
  * rot13 - encoder rot13
  * @s: pointer to string parameters
- * Return : *s
+ * Return: *s
 */
-char*rot13(char*s)
+char *rot13(char *s)
 {
 	int m;
 	int j;
