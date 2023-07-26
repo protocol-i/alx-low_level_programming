@@ -5,26 +5,25 @@
  * @dest : first input value
  * @src : second input value
  * @n : byte input value
- * Return: dest.
+ * Return: dest.#include "main.h"
 */
 char *_strncat(char *dest, char *src, int n)
 {
-	int m;
+	int i;
 	int j;
 
-	m = 0;
-	while (dest[m] != '\0')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		m++;
+		i++;
 	}
-
 	j = 0;
 	while (j < n && src[j] != '\0')
 	{
-		dest[m] = src[j];
-		m++;
-		j++;
+	dest[i] = src[j];
+	i++;
+	j++;
 	}
-	dest[m] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
