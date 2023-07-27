@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program prints a[2] = 98
+ * main - program prints r[2] = 98
  * Return: 0
 */
 int main(void)
@@ -9,7 +9,7 @@ int main(void)
 	int r[5];
 	int *p;
 
-	r[2] = 1024;
+	r[2] = 98;
 	p = &n;
   /*
    * writes your line of code here...
