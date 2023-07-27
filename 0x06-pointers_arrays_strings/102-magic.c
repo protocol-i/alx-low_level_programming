@@ -1,15 +1,17 @@
 #include <stdio.h>
+
 /**
  * main - program prints r[2] = 98
  * Return: 0
 */
+
 int main(void)
 {
 	int n;
 	int r[5];
 	int *p;
 
-	r[2] = 98;
+	r[2] = 1024;
 	p = &n;
   /*
    * writes your line of code here...
