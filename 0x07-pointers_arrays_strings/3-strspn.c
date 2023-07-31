@@ -3,18 +3,18 @@
  * _strspn - Entry point
  * @s: input
  * @accept: input
- * Return: 0
+ * Return: Always 0 (Success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int n = 0;
-	int k;
+	int r;
 
 	while (*s)
 	{
-		for (k = 0; accept[k]; r++)
+		for (r = 0; accept[r]; r++)
 		{
-			if (*s == accept[k])
+			if (*s == accept[r])
 			{
 				n++;
 				break;
