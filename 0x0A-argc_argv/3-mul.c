@@ -15,9 +15,7 @@ int _atoi(char *s)
 	len = 0;
 	f = 0;
 	digit = 0;
-
 	while (s[len] != '\0')
-	{
 		len++;
 	while (i < len && f == 0)
 	{
@@ -35,7 +33,6 @@ int _atoi(char *s)
 			f = 0;
 		}
 		i++;
-	}
 	}
 	if (f == 0)
 		return (0);
