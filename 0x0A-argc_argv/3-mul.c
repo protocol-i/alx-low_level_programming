@@ -4,26 +4,24 @@
 
 /**
  * main - Prints the multiplication of two args number
- * _atoi - converts a string to an integer
  * @argc: arugument counter
  * @argv: argument vector
  * Return: 0
  */
-int main(int argc, char *argv[])
-{
-	int n1 = 0, n2 = 0;
+int main(int argc, char *argv[]) {
+    if (argc != 3) {
+        printf("Error\n");
+        return 1;
+    }
 
-	if (argc == 3)
-	{
-		n1 = _atoi(argv[1]);
-		n2 = _atoi(argv[2]);
-		printf("%d\n", n1 * n2);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+    int num1, num2;
+    if (sscanf(argv[1], "%d", &num1) != 1 || sscanf(argv[2], "%d", &num2) != 1) {
+        printf("Error\n");
+        return 1;
+    }
 
-	return (0);
+    int result = num1 * num2;
+    printf("%d\n", result);
+
+    return 0;
 }
