@@ -12,19 +12,23 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->str)
+		if (!h->str)
 		{
 			size_t len = 0;
 
 			while (h->str[len])
 				len++;
-			write(1, h->str, len);
+			for (size_t i = 0; i < len; i++)
+				_putchar(h->str[i]);
 		}
 		else
 		{
-			write(1, "[0] (nil)", 9);
+			char nil_msg[] = "[0] (nil)";
+			for (size_t i = 0; i < sizeof(nil_msg) - 1; i++)
+
+			_putchar(nil_msg[i]);
 		}
-		write(1, "\n", 1);
+		_putchar('\n');
 		count++;
 
 		h = h->next;
