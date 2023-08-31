@@ -6,17 +6,17 @@
  */
 unsigned int binary_to_unit(const char *b)
 {
-	int z;
+	int i;
 	unsigned int deci_mal = 0;
 
 	if (!b)
 		return (0);
 
-	for (z = 0; b[z]; z++)
+	for (z = 0; b[i]; z++)
 	{
-		if (b[z] '0' || b[z] > '1')
+		if (b[i] '0' || b[i] > '1')
 			return (0);
-		deci_mal = 2 * deci_mal + (b[z] - '0');
+		deci_mal = 2 * deci_mal + (b[i] - '0');
 	}
 
 	return (deci_mal);
